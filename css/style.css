@@ -610,9 +610,9 @@ body:after {
     .site-blocks-cover .display-1 {
       font-size: 3rem; } }
 
-.circle-bg {
-  position: relative; }
-  .circle-bg:after {
+/* .circle-bg {
+  position: relative; } */
+  /* .circle-bg:after {
     width: 300px;
     height: 300px;
     content: "";
@@ -621,11 +621,11 @@ body:after {
     position: absolute;
     bottom: -90px;
     right: -90px;
-    background: #f8f9fa; }
-    @media (max-width: 991.98px) {
+    background: #f8f9fa; } */
+    /* @media (max-width: 991.98px) {
       .circle-bg:after {
         bottom: 0px;
-        right: -90px; } }
+        right: -90px; } } */
 
 .site-block-subscribe .btn {
   padding-left: 20px;
