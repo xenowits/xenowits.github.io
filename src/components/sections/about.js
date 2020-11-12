@@ -132,7 +132,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'HTML & (S)CSS', 'React', 'Vue', 'Node.js', 'WordPress'];
+  // const skills = ['JavaScript (ES6+)', 'HTML & (S)CSS', 'React', 'Vue', 'Node.js', 'WordPress'];
   const skills = ['C++', 'Blockchain', 'Golang', 'JavaScript (ES6+)', 'TypeScript', 'Node.js', 'AWS', 'Distributed systems'];
 
   return (
@@ -150,8 +150,8 @@ const About = () => {
             </p>
 
             <p>
-              I am currently studying CS at {' '}
-              <a href="https://www.nitt.edu/">NIT Trichy</a>. I am fairly active on linkedin, leetcode and github.
+              I am currently studying CSE at {' '}
+              <a href="https://www.nitt.edu/">NIT Trichy</a>. I am fairly active on Linkedin, Leetcode and Github.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>

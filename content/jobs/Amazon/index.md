@@ -7,6 +7,9 @@ range: 'May 2020 - June 2020'
 url: 'https://www.amazon.com/'
 ---
 
-- Write modern, performant, maintainable code for a diverse array of client and internal projects
-- Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, WordPress, Prismic, and Netlify
-- Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis
+- Project Title : Clean URL, Front Door RESTFul Services for Payfort.
+- Build a front door REST API layer overthe existing Payfort services using available
+AWS services like AWS API Gateway and AWS Lambda.
+- Use AWS CloudWatch logs to monitor the APIs.
+- Create OpenAPI specification to describe entire REST APIs.
+- Communicate with multi-disciplinary teams of senior engineers and product managers

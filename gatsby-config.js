@@ -2,10 +2,10 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Brittany Chiang',
+    title: 'Abhishek Kumar',
     description:
-      'Brittany Chiang is a software engineer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+      'Abhishek Kumar is a software engineer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.',
+    siteUrl: 'https://xenowits.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bchiang7',
   },
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'BrittanyChiang',
-        short_name: 'BrittanyChiang',
+        name: 'AbhishekKumar',
+        short_name: 'AbhishekKumar',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
@@ -75,8 +75,9 @@ module.exports = {
             options: {
               maxWidth: 700,
               linkImagesToOriginal: true,
-              quality: 90,
-              tracedSVG: { color: config.colors.green },
+              quality: 90
+              // traceSVG: false
+              // tracedSVG: { color: config.colors.green },
             },
           },
           {
