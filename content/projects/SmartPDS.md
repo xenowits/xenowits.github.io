@@ -2,7 +2,7 @@
 date: '2019-03-27'
 title: 'Smart & Secure PDS'
 github: 'https://github.com/xenowits/pragyanHackathon-19'
-# external: 'https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c'
+external: 'http://pragyan-hackathon.herokuapp.com/'
 tech:
   - NodeJS
   - MongoDB

@@ -5,7 +5,7 @@
   "author": "Brittany Chiang <brittany.chiang@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/xenowits/xenowits.github.io"
   },
   "keywords": [
     "gatsby"
@@ -17,7 +17,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "husky": {
     "hooks": {
@@ -53,6 +54,7 @@
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-remark": "^2.6.39",
     "gatsby-transformer-sharp": "^2.3.7",
+    "gh-pages": "^3.1.0",
     "lodash": "^4.17.19",
     "prismjs": "^1.17.1",
     "prop-types": "^15.7.2",
