@@ -11,6 +11,7 @@ const StyledContactSection = styled.section`
 
   @media (max-width: 768px) {
     margin: 0 auto 50px;
+    margin: 0 auto 50px;
   }
 
   .overline {
@@ -60,8 +61,8 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        Although I'm not currently looking for any new opportunities, my inbox is always open.
-        Whether you have a question or just want to say hi, I'll try my best to get back to you!
+        My inbox is always open to help, suggestions and building my network. Please ping me
+        and I'll try my best to get back to you!
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>
