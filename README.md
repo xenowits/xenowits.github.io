@@ -1,6 +1,5 @@
-<p>This repository has been taken from </p>
 <p align="center">
-  The current repository has been taken from the fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>
+  The current repository has been taken from the fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>.
 </p>
 
 ### Deployment

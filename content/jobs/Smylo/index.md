@@ -1,6 +1,6 @@
 ---
 date: '2017-12-21'
-title: 'Backend Engineer'
+title: 'Fullstack Engineer'
 company: 'Smylo'
 location: 'Bengaluru, India'
 range: 'Aug 2020 - Jan 2021'
