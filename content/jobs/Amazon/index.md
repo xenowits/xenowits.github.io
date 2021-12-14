@@ -1,5 +1,5 @@
 ---
-date: '2018-05-14'
+date: '2020-06-25'
 title: 'SDE Intern'
 company: 'Amazon'
 location: 'ADCI Chennai, India'

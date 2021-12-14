@@ -63,8 +63,8 @@ const Hero = () => {
   const three = <h3 className="big-heading">I build things that make the world a better place.</h3>;
   const four = (
     <p>
-      I'm a Software Engineer and a Blockchain Developer. 
-      Currently, I work at <a href="https://www.atlassian.com/">Atlassian</a> where I build products that makes collaboration across teams easier than ever.
+      I'm a Software Engineer. 
+      Currently, I work at <a href="https://obol.tech/">Obol Technologies</a> where we are solving hard problems in applied cryptography and distributed systems to enable multi-operator validators on <a href="https://ethereum.org/">Ethereum</a>.
     </p>
   );
   const five = (

@@ -1,5 +1,5 @@
 ---
-date: '2017-12-21'
+date: '2021-01-05'
 title: 'Fullstack Engineer'
 company: 'Smylo'
 location: 'Bengaluru, India'
