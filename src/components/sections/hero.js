@@ -63,8 +63,10 @@ const Hero = () => {
   const three = <h3 className="big-heading">I build things that make the world a better place.</h3>;
   const four = (
     <p>
-      I'm a Software Engineer. 
-      Currently, I work at <a href="https://obol.tech/">Obol Technologies</a> where we are solving hard problems in applied cryptography and distributed systems to enable multi-operator validators on <a href="https://ethereum.org/">Ethereum</a>.
+      I'm a Software Engineer turned Entrepreneur.
+      I'm working on the problem of solving misinformation and AI deepfakes using cryptographic technologies.
+      <br/><br/>
+      I founded <a href={"https://mayalabs.tech"}>Maya Labs</a> which is building the Maya Protocol, the protocol for Proof of Authenticity of digital media content across the web.
     </p>
   );
   const five = (

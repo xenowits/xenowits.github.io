@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Golang', 'PoS Blockchains', 'Rust', 'Applied Cryptography', 'Kubernetes', 'Ethereum', 'Consensus Algorithms', 'Distributed systems'];
+  const skills = ['Golang', 'PoS Blockchains', 'Applied Cryptography', 'Zero Knowledge Proofs', 'Consensus Algorithms', 'Distributed systems'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -134,11 +134,11 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Abhishek and I am a Software Engineer.</p>
+            <p>Hello! I'm Abhishek!</p>
 
             <p>
-              I graduated with a Bachelor's degree in CSE from <a href="https://www.nitt.edu/">NIT Trichy, India</a>.
-              I have a keen interest in solving complex problems & building decentralized applications. I believe in constant learning and unlearning and challenging myself with new unique problems.
+              I graduated with a Bachelor's degree in Computer Science from <a href="https://www.nitt.edu/">NIT Trichy, India</a>.
+              I have a keen interest in solving complex problems & building decentralized applications. I believe in constant learning and unlearning and challenging myself with new hard problems.
             </p>
 
             <p>Here are a few technologies I've been working with recently:</p>
