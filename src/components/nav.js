@@ -133,14 +133,14 @@ const Nav = ({ isHome }) => {
   const [scrolledToTop, setScrolledToTop] = useState(true);
   const prefersReducedMotion = usePrefersReducedMotion();
 
-  const handleScroll = () => {
-    setScrolledToTop(window.pageYOffset < 50);
-  };
-
   useEffect(() => {
     if (prefersReducedMotion) {
       return;
     }
+
+    const handleScroll = () => {
+      setScrolledToTop(window.pageYOffset < 50);
+    };
 
     const timeout = setTimeout(() => {
       setIsMounted(true);
@@ -152,7 +152,7 @@ const Nav = ({ isHome }) => {
       clearTimeout(timeout);
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [prefersReducedMotion]);
 
   const timeout = isHome ? loaderDelay : 0;
   const fadeClass = isHome ? 'fade' : '';

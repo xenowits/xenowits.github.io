@@ -1,11 +1,10 @@
 ---
-date: '2021-12-22'
-title: 'Blockchain Intern'
+date: '2021-10-01'
+title: 'Blockchain Engineering Intern'
 company: 'Nethermind'
 location: 'Remote'
-range: 'Oct 2021 - Dec 2021'
+range: 'October 2021 - December 2021'
 url: 'https://nethermind.io/'
 ---
 
-- Explored Ethereum, protocol engineering, zero-knowledge proofs etc.
-- Worked on integration of Verkle Tries into Eth1 client
+- Researched Verkle tree design and implementation for the Nethermind Ethereum execution client

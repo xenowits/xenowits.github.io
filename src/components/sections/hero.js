@@ -6,14 +6,17 @@ import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
-  ${({ theme }) => theme.mixins.flexCenter};
+  display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 0;
+  /* Start below the fixed nav. Vertical centering clips the top of longer
+     bios (greeting + Catalysis + prior roles) off the top of the viewport. */
+  padding: calc(var(--nav-height) + 40px) 0 80px;
 
-  @media (max-width: 480px) and (min-height: 700px) {
-    padding-bottom: 10vh;
+  @media (max-width: 480px) {
+    padding-top: calc(var(--nav-height) + 20px);
   }
 
   h1 {
@@ -56,17 +59,28 @@ const Hero = () => {
 
     const timeout = setTimeout(() => setIsMounted(true), navDelay);
     return () => clearTimeout(timeout);
-  }, []);
+  }, [prefersReducedMotion]);
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Abhishek Kumar.</h2>;
-  const three = <h3 className="big-heading">I build things that make the world a better place.</h3>;
+  const three = <h3 className="big-heading">I build DeFi infrastructure that institutions can trust.</h3>;
   const four = (
     <p>
-      I'm a Software Engineer turned Entrepreneur.
-      I'm working on the problem of solving misinformation and AI deepfakes using cryptographic technologies.
-      <br/><br/>
-      I founded <a href={"https://mayalabs.tech"}>Maya Labs</a> which is building the Maya Protocol, the protocol for Proof of Authenticity of digital media content across the web.
+      I'm a founder and commercial operator with{' '}
+      <strong>5+ years in DeFi and crypto infrastructure</strong> — spanning strategy, business
+      development, and partnerships.
+      <br />
+      <br />
+      I founded{' '}
+      <a href="https://catalysis.network/">Catalysis</a>, DeFi's first vault-native risk coverage
+      protocol — raised $1.3M pre-seed, hired an 8-person team, and closed 20+ partnerships with Tier-1
+      protocols including Morpho, Gauntlet, and EigenLayer.
+      <br />
+      <br />
+      Prior to that, I was product at <a href="https://obol.tech/">Obol Labs</a> and an engineer at{' '}
+      <a href="https://nethermind.io/">Nethermind</a>,{' '}
+      <a href="https://www.atlassian.com/">Atlassian</a>, and{' '}
+      <a href="https://www.amazon.com/">Amazon</a>.
     </p>
   );
   const five = (

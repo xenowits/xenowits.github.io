@@ -172,7 +172,7 @@ const Projects = () => {
           fileAbsolutePath: { regex: "/content/projects/" }
           frontmatter: { showInProjects: { ne: false } }
         }
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { frontmatter: { date: DESC } }
       ) {
         edges {
           node {
@@ -203,7 +203,7 @@ const Projects = () => {
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealArchiveLink.current, srConfig());
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
-  }, []);
+  }, [prefersReducedMotion]);
 
   const GRID_LIMIT = 6;
   const projects = data.projects.edges.filter(({ node }) => node);
@@ -241,7 +241,7 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={external} rel="noopener noreferrer" target="_blank">
+            <a href={external || github} rel="noopener noreferrer" target="_blank">
               {title}
             </a>
           </h3>

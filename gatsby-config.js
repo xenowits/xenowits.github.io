@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Abhishek Kumar',
     description:
-      'Abhishek Kumar is a software engineer specializing in building great software and decentralized applications',
+      'Abhishek Kumar is a founder and commercial operator in DeFi and crypto infrastructure — previously founded Catalysis and engineered at Obol Labs and Atlassian',
     siteUrl: 'https://xenowits.github.io', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@xenowits',
@@ -77,7 +77,6 @@ module.exports = {
               maxWidth: 700,
               linkImagesToOriginal: true,
               quality: 90,
-              tracedSVG: { color: config.colors.green },
             },
           },
           {

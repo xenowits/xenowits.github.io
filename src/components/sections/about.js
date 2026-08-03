@@ -123,9 +123,16 @@ const About = () => {
     }
 
     sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
-  const skills = ['Golang', 'PoS Blockchains', 'Applied Cryptography', 'Zero Knowledge Proofs', 'Consensus Algorithms', 'Distributed systems'];
+  const skills = [
+    'Partnerships',
+    'Fundraising',
+    'GTM Strategy',
+    'Staking Infra',
+    'Financial Modelling',
+    'DeFi Mechanics',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -137,11 +144,24 @@ const About = () => {
             <p>Hello! I'm Abhishek!</p>
 
             <p>
-              I graduated with a Bachelor's degree in Computer Science from <a href="https://www.nitt.edu/">NIT Trichy, India</a>.
-              I have a keen interest in solving complex problems & building decentralized applications. I believe in constant learning and unlearning and challenging myself with new hard problems.
+              I graduated with a Bachelor's degree in Computer Science from{' '}
+              <a href="https://www.nitt.edu/">NIT Trichy, India</a>. I'm equally comfortable negotiating
+              commercial terms and separating real technical claims from noise — from product engineering
+              at Obol Labs to founding Catalysis and shipping vault-native risk coverage on mainnet.
             </p>
 
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>
+              I've spoken at{' '}
+              <a href="https://x.com/xenowits/status/1922840866944655761">
+                Restaking Day @ Token2049 Dubai
+              </a>
+              , published peer-reviewed work on{' '}
+              <a href="https://arxiv.org/abs/2505.03843">Catalysis Economics (MARBLE 2025)</a>, and
+              built open-source tools like the{' '}
+              <a href="https://nakaflow.io">Nakamoto Coefficient Calculator</a>.
+            </p>
+
+            <p>Here are a few things I've been working with recently:</p>
           </div>
 
           <ul className="skills-list">
@@ -153,11 +173,11 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me-token2049.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
+              alt="Abhishek Kumar speaking at Restaking &amp; DeFAI Day, Token2049 Dubai"
             />
           </div>
         </StyledPic>

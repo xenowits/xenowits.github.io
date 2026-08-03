@@ -1,10 +1,12 @@
 ---
 date: '2022-01-03'
-title: 'Core Protocol Engineer'
-company: 'Obol Labs, Inc.'
+title: 'Product Engineer'
+company: 'Obol Labs'
 location: 'Remote'
-range: 'Jan 2022 - Feb 2024'
+range: 'January 2022 - March 2024'
 url: 'https://obol.tech/'
 ---
 
-- Built [charon](https://github.com/ObolNetwork/charon), the Distributed Validator client for Ethereum.
+- Owned technical onboarding and ongoing relationships for 10+ institutional node operators including Bitcoin Suisse and Blockdaemon
+- Shipped partner integrations for Distributed Validator Technology (DVT) and authored public docs and blog.obol.org posts
+- Built Ethereum staking and restaking expertise later applied at Catalysis

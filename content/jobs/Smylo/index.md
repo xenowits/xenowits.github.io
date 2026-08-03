@@ -1,12 +1,12 @@
 ---
-date: '2021-01-05'
-title: 'Fullstack Engineer'
+date: '2020-08-01'
+title: 'Backend Intern'
 company: 'Smylo'
 location: 'Bengaluru, India'
-range: 'Aug 2020 - Jan 2021'
+range: 'August 2020 - January 2021'
 url: 'https://api.smylo.in/'
 ---
 
-- Build APIs using NodeJS and TypeScript for multiple Smylo services
-- Design backend architecture including usage of AWS services like EC2, RDS etc.
-- Design database schema and write code to effectively manipulate the database
+- Built APIs using Node.js and TypeScript for multiple Smylo services
+- Designed backend architecture using AWS services including EC2 and RDS
+- Designed database schema and wrote code to effectively manipulate the database

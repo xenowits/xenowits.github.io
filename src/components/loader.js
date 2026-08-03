@@ -29,7 +29,7 @@ const StyledLoader = styled.div`
       margin: 0 auto;
       fill: none;
       user-select: none;
-      #B {
+      #A {
         opacity: 0;
       }
     }
@@ -39,7 +39,9 @@ const StyledLoader = styled.div`
 const Loader = ({ finishLoading }) => {
   const [isMounted, setIsMounted] = useState(false);
 
-  const animate = () => {
+  useEffect(() => {
+    const timeout = setTimeout(() => setIsMounted(true), 10);
+
     const loader = anime.timeline({
       complete: () => finishLoading(),
     });
@@ -53,7 +55,7 @@ const Loader = ({ finishLoading }) => {
         strokeDashoffset: [anime.setDashoffset, 0],
       })
       .add({
-        targets: '#logo #B',
+        targets: '#logo #A',
         duration: 700,
         easing: 'easeInOutQuart',
         opacity: 1,
@@ -73,13 +75,9 @@ const Loader = ({ finishLoading }) => {
         opacity: 0,
         zIndex: -1,
       });
-  };
 
-  useEffect(() => {
-    const timeout = setTimeout(() => setIsMounted(true), 10);
-    animate();
     return () => clearTimeout(timeout);
-  }, []);
+  }, [finishLoading]);
 
   return (
     <StyledLoader className="loader" isMounted={isMounted}>

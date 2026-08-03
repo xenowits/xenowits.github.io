@@ -39,7 +39,10 @@ const StyledProject = styled.li`
     }
   }
 
-  &:nth-of-type(odd) {
+  /* Put content on the right for every other project (2nd, 4th, …).
+     The first card stays left-aligned — right-aligned body copy and
+     flex-end tags wrap poorly with longer blurbs / tech names. */
+  &:nth-of-type(even) {
     .project-content {
       grid-column: 7 / -1;
       text-align: right;
@@ -61,14 +64,6 @@ const StyledProject = styled.li`
 
       @media (max-width: 768px) {
         justify-content: flex-start;
-      }
-
-      li {
-        margin: 0 0 5px 20px;
-
-        @media (max-width: 768px) {
-          margin: 0 10px 5px 0;
-        }
       }
     }
     .project-links {
@@ -160,6 +155,15 @@ const StyledProject = styled.li`
     background-color: var(--light-navy);
     color: var(--light-slate);
     font-size: var(--fz-lg);
+    text-align: left;
+
+    p {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 1em;
+      }
+    }
 
     @media (max-width: 768px) {
       padding: 20px 0;
@@ -179,6 +183,7 @@ const StyledProject = styled.li`
   .project-tech-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 8px 16px;
     position: relative;
     z-index: 2;
     margin: 25px 0 10px;
@@ -186,7 +191,7 @@ const StyledProject = styled.li`
     list-style: none;
 
     li {
-      margin: 0 20px 5px 0;
+      margin: 0;
       color: var(--light-slate);
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
@@ -197,7 +202,6 @@ const StyledProject = styled.li`
       margin: 10px 0;
 
       li {
-        margin: 0 10px 5px 0;
         color: var(--lightest-slate);
       }
     }
@@ -298,7 +302,7 @@ const Featured = () => {
     {
       featured: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/featured/" } }
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { frontmatter: { date: DESC } }
       ) {
         edges {
           node {
@@ -312,6 +316,8 @@ const Featured = () => {
               tech
               github
               external
+              twitter
+              docs
             }
             html
           }
@@ -332,7 +338,7 @@ const Featured = () => {
 
     sr.reveal(revealTitle.current, srConfig());
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
-  }, []);
+  }, [prefersReducedMotion]);
 
   return (
     <section id="projects">
@@ -344,7 +350,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover } = frontmatter;
+            const { external, title, tech, github, cover, twitter, docs } = frontmatter;
             const image = getImage(cover);
 
             return (
@@ -374,6 +380,16 @@ const Featured = () => {
                       {github && (
                         <a href={github} aria-label="GitHub Link">
                           <Icon name="GitHub" />
+                        </a>
+                      )}
+                      {docs && (
+                        <a href={docs} aria-label="Documentation Link">
+                          <Icon name="Bookmark" />
+                        </a>
+                      )}
+                      {twitter && (
+                        <a href={twitter} aria-label="Twitter Link">
+                          <Icon name="Twitter" />
                         </a>
                       )}
                       {external && (

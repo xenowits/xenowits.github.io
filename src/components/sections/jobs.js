@@ -169,7 +169,7 @@ const Jobs = () => {
     query {
       jobs: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/jobs/" } }
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { frontmatter: { date: DESC } }
       ) {
         edges {
           node {
@@ -201,9 +201,10 @@ const Jobs = () => {
     }
 
     sr.reveal(revealContainer.current, srConfig());
-  }, []);
+  }, [prefersReducedMotion]);
 
-  const focusTab = () => {
+  // Only re-run the effect if tabFocus changes
+  useEffect(() => {
     if (tabs.current[tabFocus]) {
       tabs.current[tabFocus].focus();
       return;
@@ -216,10 +217,7 @@ const Jobs = () => {
     if (tabFocus < 0) {
       setTabFocus(tabs.current.length - 1);
     }
-  };
-
-  // Only re-run the effect if tabFocus changes
-  useEffect(() => focusTab(), [tabFocus]);
+  }, [tabFocus]);
 
   // Focus on tabs when using up & down arrow keys
   const onKeyDown = e => {
