@@ -6,12 +6,14 @@ import { usePrefersReducedMotion } from '@hooks';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
 
   @media (max-width: 768px) {
-    margin: 0 auto 50px;
-    margin: 0 auto 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
 
   .overline {

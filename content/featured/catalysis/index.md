@@ -7,9 +7,9 @@ github: 'https://github.com/0xcatalysis/'
 twitter: 'https://x.com/0xcatalysis'
 docs: 'https://docs.catalysis.network/'
 tech:
-  - EigenLayer
   - Morpho
   - DeFi Vaults
+  - Institutions
   - Coverage
 showInProjects: false
 ---

@@ -11,6 +11,11 @@ const StyledProjectsSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 30px;
+  }
 
   h2 {
     font-size: clamp(24px, 5vw, var(--fz-heading));
