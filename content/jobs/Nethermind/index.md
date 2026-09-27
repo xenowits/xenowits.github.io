@@ -1,6 +1,6 @@
 ---
 date: '2021-10-01'
-title: 'Blockchain Engineering Intern'
+title: 'Blockchain Engineer'
 company: 'Nethermind'
 location: 'Remote'
 range: 'October 2021 - December 2021'

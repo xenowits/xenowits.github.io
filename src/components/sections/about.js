@@ -146,7 +146,11 @@ const About = () => {
             <p>
               I graduated with a Bachelor's degree in Computer Science in{' '}
               <a href="https://www.nitt.edu/">2021</a>. Since then I've taken on roles across product and
-              engineering, through founding Catalysis and shipping vault-native risk coverage on mainnet.
+              engineering, through founding Catalysis and{' '}
+              <a href="https://x.com/0xcatalysis/status/2044053623328649584">
+                shipping vault-native risk coverage on mainnet
+              </a>
+              .
             </p>
 
             <p>
