@@ -1,6 +1,6 @@
 ---
 date: '2022-01-03'
-title: 'Product Engineer'
+title: 'Product Lead'
 company: 'Obol Labs'
 location: 'Remote'
 range: 'January 2022 - March 2024'

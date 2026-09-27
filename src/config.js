@@ -1,5 +1,8 @@
+const email = 'kumar.abhishek111b@gmail.com';
+
 module.exports = {
-  email: 'kumar.abhishek111b@gmail.com',
+  email,
+  emailLink: `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`,
 
   socialMedia: [
     {
