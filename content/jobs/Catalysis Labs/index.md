@@ -3,7 +3,7 @@ date: '2024-10-01'
 title: 'Founder & CEO'
 company: 'Catalysis'
 location: 'Remote / Singapore'
-range: 'October 2024 - August 2026'
+range: 'October 2024 - October 2026'
 url: 'https://catalysis.network/'
 ---
 

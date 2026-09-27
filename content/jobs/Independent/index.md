@@ -1,6 +1,6 @@
 ---
 date: '2024-04-01'
-title: 'Independent Consultant'
+title: 'GTM Consultant'
 company: 'Consulting'
 location: 'Remote / Dubai'
 range: 'April 2024 - September 2024'

@@ -71,13 +71,13 @@ const Hero = () => {
       development, and partnerships.
       <br />
       <br />
-      I founded{' '}
+      Previously, I founded{' '}
       <a href="https://catalysis.network/">Catalysis</a>, DeFi's first vault-native risk coverage
       protocol — raised $1.3M pre-seed, hired an 8-person team, and closed 20+ partnerships with Tier-1
       protocols including Morpho, Gauntlet, and EigenLayer.
       <br />
       <br />
-      Prior to that, I was product at <a href="https://obol.tech/">Obol Labs</a> and an engineer at{' '}
+      Prior to that, I led product at <a href="https://obol.tech/">Obol Labs</a> and an engineer at{' '}
       <a href="https://nethermind.io/">Nethermind</a>,{' '}
       <a href="https://www.atlassian.com/">Atlassian</a>, and{' '}
       <a href="https://www.amazon.com/">Amazon</a>.

@@ -129,7 +129,7 @@ const About = () => {
     'Partnerships',
     'Fundraising',
     'GTM Strategy',
-    'Staking Infra',
+    'Agentic Infra',
     'Financial Modelling',
     'DeFi Mechanics',
   ];
@@ -144,10 +144,14 @@ const About = () => {
             <p>Hello! I'm Abhishek!</p>
 
             <p>
-              I graduated with a Bachelor's degree in Computer Science from{' '}
-              <a href="https://www.nitt.edu/">NIT Trichy, India</a>. I'm equally comfortable negotiating
-              commercial terms and separating real technical claims from noise — from product engineering
-              at Obol Labs to founding Catalysis and shipping vault-native risk coverage on mainnet.
+              I graduated with a Bachelor's degree in Computer Science in{' '}
+              <a href="https://www.nitt.edu/">2021</a>. Since then I've taken on roles across product and
+              engineering, through founding Catalysis and shipping vault-native risk coverage on mainnet.
+            </p>
+
+            <p>
+              I'm equally comfortable negotiating commercial terms and separating real technical claims
+              from noise — in the same conversation.
             </p>
 
             <p>

@@ -5,7 +5,7 @@ module.exports = {
     title: 'Abhishek Kumar',
     description:
       'Abhishek Kumar is a founder and commercial operator in DeFi and crypto infrastructure — previously founded Catalysis and engineered at Obol Labs and Atlassian',
-    siteUrl: 'https://xenowits.github.io', // No trailing slash allowed!
+    siteUrl: 'https://xenowits.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@xenowits',
   },
