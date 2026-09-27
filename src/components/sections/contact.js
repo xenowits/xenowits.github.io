@@ -70,12 +70,9 @@ const Contact = () => {
       </p>
 
       <p>
-        You can reach me via <a href={emailLink}>email</a>
-        {', '}
-        <a href={twitter} target="_blank" rel="noopener noreferrer">
+        You can reach me via <a href={emailLink}>email</a> <a href={twitter} target="_blank" rel="noopener noreferrer">
           Twitter
-        </a>
-        {', or '}
+        </a>{' or '}
         <a href={linkedin} target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>
