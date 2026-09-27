@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://xenowits.github.io/sitemap-index.xml
-Host: https://xenowits.github.io
+Sitemap: https://xenowits.com/sitemap-index.xml
+Host: https://xenowits.com
