@@ -60,12 +60,6 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        After wrapping up Catalysis, I'm now actively looking for roles in
-        <br />
-        partnerships, GTM & business development.
-      </p>
-
-      <p>
         If you're building an early-stage startup, I'd like to hear what you're working on.
       </p>
 
