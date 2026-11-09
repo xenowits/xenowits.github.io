@@ -73,7 +73,7 @@ const Hero = () => {
       <br />
       Previously, I founded{' '}
       <a href="https://catalysis.network/">Catalysis</a>, DeFi's first vault-native risk coverage
-      protocol — raised $1.3M pre-seed, hired an 8-person team, and closed 20+ partnerships with Tier-1
+      protocol — raised $1.25M pre-seed, hired an 8-person team, and closed 20+ partnerships with Tier-1
       protocols including Morpho, Gauntlet, and EigenLayer.
       <br />
       <br />
